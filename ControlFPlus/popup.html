@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+  </head>
+  <body>
+
+    <style>
+      html, body {
+          width: 250px;
+          height: 100px;
+          margin: 0;
+          padding: 0;
+      }
+      #configDiv{
+        float:right;
+        height:280px;
+        width:100%;
+      }
+    </style>
+
+    <div id="configDiv" class="configDiv">
+      <center>
+
+      <p1><b>Ctrl F Plus</b></p1>
+<br><br>
+
+      <p1>Similarity Match</p1>
+<br>
+      <p1>0
+        <input type="range" min="0" max="4" value="4" id="similarityRangeBar"></input>
+        100%</p1>
+<br>
+      <p1>Distance Between Words</p1>
+<br>
+      <p1>0
+        <input type="range" min="0" max="10" value="0" id="wordDistanceBar"></input>
+      100</p1>
+<br>
+      <button id="findResultsButton"> Find Results </button>
+
+      <button id="addButton">+</button>
+      <button id="minusButton">-</button>
+      <div id="searchDiv"></div>
+<br>
+
+      </div>
+
+<script src="popup.js" type="text/javascript"></script>
+
+  </body>
+</html>
